@@ -7,7 +7,7 @@ const Navbar = ({ user }) => {
       aria-label="Third navbar example"
     >
       <div className="container">
-        <Link to="/" className="navbar-brand">
+        <Link to="/portfolios" className="navbar-brand">
           <i className="bi bi-camera2"></i> <b>Portfolios</b>
         </Link>
         <button
