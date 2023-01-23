@@ -25,7 +25,7 @@ class SignIn extends Form {
     const { email, password } = this.state.form;
     try {
       await usersService.login(email, password);
-      window.location = "/";
+      window.location = "/Portfolios";
     } catch ({ response }) {
       if (response && response.status === 400) {
         this.setState({

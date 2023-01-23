@@ -4,7 +4,7 @@ import usersService from "../services/usersService";
 class SignOut extends React.Component {
   componentDidMount() {
     usersService.logout();
-    window.location = "/";
+    window.location = "/Portfolios";
   }
 
   render() {
