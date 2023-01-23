@@ -68,7 +68,7 @@ class App extends React.Component {
             <Route path="/logout" element={<LogOut />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/about" element={<About />} />
-            <Route path="/" element={<Home user={user} />} />
+            <Route path="/portfolios" element={<Home user={user} />} />
           </Routes>
         </main>
 
