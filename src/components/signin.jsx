@@ -37,7 +37,7 @@ class SignIn extends Form {
 
   render() {
     if (usersService.getUser()) {
-      return <Navigate to="/portfolios" />;
+      return <Navigate to="/Portfolios" />;
     }
 
     return (
