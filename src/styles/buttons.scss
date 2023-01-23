@@ -1,0 +1,137 @@
+.portfolio {
+  &-btn {
+    &.btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      width: 260px;
+      height: 70px;
+      background-color: #f1c40f !important;
+      border: none;
+
+      &:hover {
+        background-color: #dab008 !important;
+      }
+
+      .nav-link {
+        color: #0e374b !important;
+      }
+    }
+  }
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-btn {
+    &.btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      width: 260px;
+      height: 70px;
+      margin-left: 15px;
+
+      .nav-link {
+        color: #0e374b !important;
+      }
+    }
+  }
+}
+
+.add-photo {
+  &-container {
+    display: flex;
+
+    .add-photo-btn {
+      background-color: #f1c40f !important;
+      margin-top: 55px;
+      width: 175px;
+      height: 38px;
+      margin-left: 20px;
+      border: none;
+
+      &:hover {
+        background-color: #dab008 !important;
+      }
+    }
+  }
+}
+
+.signin-btn {
+  display: block;
+  margin-top: 28px;
+  color: #0e374b;
+  font-size: 16px;
+
+  &:hover {
+    color: #041f2c;
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #62e3ce !important;
+  border-color: #62e3ce !important;
+  color: #0e374b !important;
+  font-weight: 500 !important;
+
+  &:hover {
+    background-color: #46c0ac !important;
+    border-color: #46c0ac !important;
+  }
+
+  .nav-link {
+    color: #0e374b !important;
+  }
+}
+
+// ------------------------------- Mobile -------------------------------
+@media only screen and (max-width: 576px) {
+  .add-photo-container {
+    flex-direction: column;
+
+    .add-photo-btn {
+      align-self: center;
+      margin-top: 20px;
+      margin-left: unset;
+    }
+  }
+
+  .photos {
+    &-btn {
+      &.btn-primary {
+        align-self: center;
+        margin-left: unset;
+      }
+    }
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio {
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-btn {
+      &.btn-primary {
+        align-self: center;
+        margin-left: unset;
+      }
+    }
+
+    display: flex;
+    justify-content: center;
+  }
+}

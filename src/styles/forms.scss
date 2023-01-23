@@ -1,0 +1,49 @@
+.form {
+  width: 415px;
+  margin: auto;
+  flex-grow: 1;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  transform: translate(-50%, -50%);
+  background-color: #f9fbff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+
+  &-group {
+    margin-bottom: 5px;
+  }
+
+  .title {
+    margin-top: unset;
+  }
+
+  label {
+    margin: 5px 0;
+  }
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  .sub-text {
+    font-size: 22px;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+// ------------------------------- Mobile -------------------------------
+@media only screen and (max-width: 576px) {
+  .form {
+    width: 100%;
+    position: unset;
+    transform: unset;
+
+    .sub-text {
+      font-size: 19px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.navbar {
+  background-color: #ffffff88;
+  z-index: 1;
+
+  &-toggle {
+    background-color: transparent;
+    border: none;
+  }
+
+  &-brand {
+    color: #0e374b !important;
+  }
+
+  &-toggler {
+    background-color: #f9f9f9 !important;
+    padding: 2px !important;
+  }
+
+  .nav-link {
+    color: #000 !important;
+  }
+}
+
+.nav {
+  &-link {
+    color: #fff !important;
+
+    &.active {
+      color: #46c0ac !important;
+    }
+
+    &:hover {
+      color: #46c0ac !important;
+    }
+  }
+}
+
+// ------------------------------- Mobile -------------------------------
+@media only screen and (max-width: 576px) {
+  .navbar {
+    &-toggler {
+      background-color: transparent !important;
+
+      &:focus {
+        box-shadow: none !important;
+      }
+
+      &-icon {
+        width: unset !important;
+        height: unset !important;
+        background: none !important;
+
+        .bi-list::before {
+          content: "\f479";
+          color: #0e374b;
+          font-size: 25px;
+          margin-right: -10px;
+        }
+      }
+    }
+  }
+}
